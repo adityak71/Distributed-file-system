@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Distributed File System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💾 Mini Distributed File System</h1>
+    <p>Simulating Replication & Fault Tolerance (Web Version)</p>
+
+    <div class="controls">
+      <input type="text" id="filename" placeholder="Filename" />
+      <input type="text" id="data" placeholder="File Content" />
+      <button onclick="uploadFile()">Upload</button>
+      <button onclick="downloadFile()">Download</button>
+      <button onclick="listFiles()">List Files</button>
+    </div>
+
+    <div class="node-controls">
+      <input type="number" id="nodeNum" placeholder="Node Number" min="1" />
+      <button onclick="failNode()">Fail Node</button>
+      <button onclick="recoverNode()">Recover Node</button>
+      <button onclick="repairFaults()">Repair Faults</button>
+    </div>
+
+    <div id="output" class="output"></div>
+    <div id="nodeDisplay" class="nodes"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+  background-color: #101820;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00e0ff44;
+}
+
+h1 {
+  text-align: center;
+  color: #00e0ff;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.controls, .node-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #00e0ff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00bcd4;
+}
+
+.output {
+  margin-top: 30px;
+  background-color: #20232a;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: monospace;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.nodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.node {
+  background-color: #262b35;
+  border: 2px solid #00e0ff44;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.node.down {
+  background-color: #552222;
+  border-color: #ff4444;
+}
+
+.node h3 {
+  color: #00e0ff;
+  margin-bottom: 8px;
+}
+
+.node p {
+  font-size: 13px;
+  color: #ccc;
+}

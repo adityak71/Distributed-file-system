@@ -6,6 +6,7 @@ class Node {
     this.files = {};
   }
 
+  
   storeFile(filename, data) {
     if (this.active) {
       this.files[filename] = data;
@@ -187,3 +188,4 @@ function recoverNode() {
 function repairFaults() {
   dfs.repairFaults();
 }
+
